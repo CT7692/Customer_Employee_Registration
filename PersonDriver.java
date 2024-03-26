@@ -70,22 +70,22 @@ public class PersonDriver
         {
             input = Validator.getChoiceString(sc, msg1, "c", "e");
             
-            if(input.equalsIgnoreCase("c"))
+            if("c".equalsIgnoreCase(input))
             {
                 
                 enterCustomer(sc, cust, input, msg2, msg3, msg4, err);
                 input = Validator.getChoiceString(sc, msg5, "y", "n");
                 
-                if(input.equalsIgnoreCase("n"))
+                if("n".equalsIgnoreCase(input))
                     operational = false;
             }
             
-            else if(input.equalsIgnoreCase("e"))
+            else if("e".equalsIgnoreCase(input))
             {
                 enterEmployee(sc, empl, input, msg2, msg3, err);
                 input = Validator.getChoiceString(sc, msg5, "y", "n");
                 
-                if(input.equalsIgnoreCase("n"))
+                if("n".equalsIgnoreCase(input))
                     operational = false;
             }       
         }
